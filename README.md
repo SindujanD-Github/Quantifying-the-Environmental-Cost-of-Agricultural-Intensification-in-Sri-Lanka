@@ -20,6 +20,7 @@ For the 70 percent of the world's poor who live in rural areas, agriculture is t
     Expected update frequency : Every month
 
 Source: World Bank Agriculture and Rural Development Indicators for Sri Lanka via HDX.
+
 URL: https://data.humdata.org/dataset/world-bank-agriculture-and-rural-development-indicators-for-sri-lanka
 
 The dataset includes longitudinal indicators (1961–2022) covering:
@@ -29,7 +30,32 @@ The dataset includes longitudinal indicators (1961–2022) covering:
     Fertilizer consumption
     Cereal yield and Food Production Indices
 
-    Indicators: Access to electricity, Agricultural land, Agricultural raw materials exports, Agricultural raw materials imports, Agriculture, Annual freshwater withdrawals, Arable land, Average precipitation in depth, Cereal production, Cereal yield, Crop production index, Employment in agriculture, Fertilizer consumption, Food production index, Forest area, Land area, Land under cereal production, Livestock production index, Permanent cropland, Rural land area, Rural land area where elevation is below 5 meters, Rural population, Rural population growth, Rural population living in areas where elevation is below 5 meters, Surface area
+    Indicators: 
+        Access to electricity, 
+        Agricultural land, 
+        Agricultural raw materials exports,
+        Agricultural raw materials imports,
+        Agriculture,
+        Annual freshwater withdrawals,
+        Arable land,
+        Average precipitation in depth,
+        Cereal production,
+        Cereal yield,
+        Crop production index,
+        Employment in agriculture,
+        Fertilizer consumption,
+        Food production index,
+        Forest area,
+        Land area,
+        Land under cereal production,
+        Livestock production index,
+        Permanent cropland,
+        Rural land area,
+        Rural land area where elevation is below 5 meters,
+        Rural population,
+        Rural population growth,
+        Rural population living in areas where elevation is below 5 meters,
+        Surface area
 
 ## Step 3: Data Understanding
 
