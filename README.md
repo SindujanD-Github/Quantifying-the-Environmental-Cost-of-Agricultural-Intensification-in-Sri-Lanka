@@ -14,19 +14,20 @@ The "Sustainability Gap" in Sri Lanka suggests that food security gains are curr
 
 For the 70 percent of the world's poor who live in rural areas, agriculture is the main source of income and employment. But depletion and degradation of land and water pose serious challenges to producing enough food and other agricultural products to sustain livelihoods here and meet the needs of urban populations. Data presented here include measures of agricultural inputs, outputs, and productivity compiled by the UN's Food and Agriculture Organization.
 
-Time period of the dataset : 01 January 1960 - 31 December 2025
-Dataset Added on HDX : 19 November 2019
-Modified : 2 March 2026
-Expected update frequency : Every month
+    Time period of the dataset : 01 January 1960 - 31 December 2025
+    Dataset Added on HDX : 19 November 2019
+    Modified : 2 March 2026
+    Expected update frequency : Every month
 
 Source: World Bank Agriculture and Rural Development Indicators for Sri Lanka via HDX.
 URL: https://data.humdata.org/dataset/world-bank-agriculture-and-rural-development-indicators-for-sri-lanka
 
 The dataset includes longitudinal indicators (1961–2022) covering:
-Forest area (sq. km)
-Agricultural land (% and sq. km)
-Fertilizer consumption
-Cereal yield and Food Production Indices
+
+    Forest area (sq. km)
+    Agricultural land (% and sq. km)
+    Fertilizer consumption
+    Cereal yield and Food Production Indices
 
     Indicators: Access to electricity, Agricultural land, Agricultural raw materials exports, Agricultural raw materials imports, Agriculture, Annual freshwater withdrawals, Arable land, Average precipitation in depth, Cereal production, Cereal yield, Crop production index, Employment in agriculture, Fertilizer consumption, Food production index, Forest area, Land area, Land under cereal production, Livestock production index, Permanent cropland, Rural land area, Rural land area where elevation is below 5 meters, Rural population, Rural population growth, Rural population living in areas where elevation is below 5 meters, Surface area
 
@@ -59,13 +60,13 @@ Features: Food Production Index, Fertilizer consumption (kg/ha), Agricultural ma
 
 ## Step 7: Hypothesis Testing
 
-Null Hypothesis (H_0): Changes in the Food Production Index have no relationship with, or do not precede, changes in Forest Area.
+    Null Hypothesis (H_0): Changes in the Food Production Index have no relationship with, or do not precede, changes in Forest Area.
 
-Alternative Hypothesis (H_A): Increases in Food Production significantly correlate with and "Granger-cause" a reduction in Forest Area.
+    Alternative Hypothesis (H_A): Increases in Food Production significantly correlate with and "Granger-cause" a reduction in Forest Area.
 
-H1 (Fertilizer Intensity): A T-test confirmed a statistically significant increase in chemical intensity post-2000 ($p < 0.05$) with a large Cohen's $d$ effect size.
+    H1 (Fertilizer Intensity): A T-test confirmed a statistically significant increase in chemical intensity post-2000 ($p < 0.05$) with a large Cohen's $d$ effect size.
 
-H2 (Land Expansion): Spearman Rho ($r_s > 0.9$) confirmed a strong monotonic upward trend in agricultural land area over time, directly correlating with forest decline.
+    H2 (Land Expansion): Spearman Rho ($r_s > 0.9$) confirmed a strong monotonic upward trend in agricultural land area over time, directly correlating with forest decline.
 
 ## Step 8: Model Development
 
@@ -78,10 +79,11 @@ A diverse set of regressors were trained and compared:
 ## Step 9: Model Evaluation
 
 Performance was benchmarked using four key metrics:
-R2 Score: Measures variance explanation (Target: >0.90).
-RMSE: Quantifies prediction error in sq. km.
-MAE: Average absolute error.
-MAPE: Percentage error to assess reliability across different decades.
+
+    R2 Score: Measures variance explanation (Target: >0.90).
+    RMSE: Quantifies prediction error in sq. km.
+    MAE: Average absolute error.
+    MAPE: Percentage error to assess reliability across different decades.
 
 ## Step 10: Interpretation of Results
 
@@ -94,16 +96,16 @@ This indicates that Random Forest is better at generalizing across different "er
 The analysis confirms that Sri Lanka's agricultural growth currently operates as a structural driver of deforestation. To mitigate this, the study advocates for Sustainable Intensification—shifting from horizontal expansion (clearing land) to vertical growth (optimizing yield on existing plots through technology). This transition is essential to decouple national food security from environmental degradation.
 
 🛠 Tech Stack
-Languages: Python 3.x
+    Languages: Python 3.x
 
-Data Science: pandas, numpy, scipy
+    Data Science: pandas, numpy, scipy
 
-Visualization: matplotlib, seaborn
+    Visualization: matplotlib, seaborn
 
-Machine Learning: scikit-learn
+    Machine Learning: scikit-learn
 
-Preprocessing: StandardScaler, ColumnTransformer, Pipeline
+    Preprocessing: StandardScaler, ColumnTransformer, Pipeline
 
-Models: RandomForestRegressor, GradientBoostingRegressor, Ridge, LinearRegression
+    Models: RandomForestRegressor, GradientBoostingRegressor, Ridge, LinearRegression
 
-Metrics: r2_score, mean_squared_error, mean_absolute_error, mean_absolute_percentage_error
+    Metrics: r2_score, mean_squared_error, mean_absolute_error, mean_absolute_percentage_error
