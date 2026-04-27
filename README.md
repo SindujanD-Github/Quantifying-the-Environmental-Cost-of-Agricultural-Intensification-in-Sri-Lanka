@@ -135,3 +135,35 @@ The analysis confirms that Sri Lanka's agricultural growth currently operates as
     Models: RandomForestRegressor, GradientBoostingRegressor, Ridge, LinearRegression
 
     Metrics: r2_score, mean_squared_error, mean_absolute_error, mean_absolute_percentage_error
+
+### ## Installation
+Run the following command to install all necessary dependencies:
+
+    bash
+    pip install pandas numpy scipy matplotlib seaborn scikit-learn
+
+# Core Data Handling
+    import pandas as pd
+    import numpy as np
+    from scipy import stats
+
+# Data Visualization
+    import matplotlib.pyplot as plt
+    import seaborn as sns
+
+# Preprocessing & Workflow
+    from sklearn.preprocessing import StandardScaler
+    from sklearn.compose import ColumnTransformer
+    from sklearn.pipeline import Pipeline
+
+# Machine Learning Models
+    from sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor
+    from sklearn.linear_model import Ridge, LinearRegression
+
+# Evaluation Metrics
+    from sklearn.metrics import (
+        r2_score, 
+        mean_squared_error, 
+        mean_absolute_error, 
+        mean_absolute_percentage_error
+    )
