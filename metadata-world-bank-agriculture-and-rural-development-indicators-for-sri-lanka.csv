@@ -1,0 +1,29 @@
+Field,Label,Value
+id,Dataset ID,5f03f0d6-bdb0-48bd-ab57-548cb97d7a9f
+title,Title of Dataset,Sri Lanka - Agriculture and Rural Development
+name,Dataset URL,world-bank-agriculture-and-rural-development-indicators-for-sri-lanka
+notes,Description,"Contains data from the World Bank's <a href=""http://data.worldbank.org/"">data portal</a>. There is also a <a href=""https://data.humdata.org/dataset/world-bank-combined-indicators-for-sri-lanka"">consolidated country dataset</a> on HDX.  For the 70 percent of the world's poor who live in rural areas, agriculture is the main source of income and employment. But depletion and degradation of land and water pose serious challenges to producing enough food and other agricultural products to sustain livelihoods here and meet the needs of urban populations. Data presented here include measures of agricultural inputs, outputs, and productivity compiled by the UN's Food and Agriculture Organization."
+dataset_source,Source,World Bank
+organization,Contributor,World Bank Group
+dataset_date,Reference Period,[1960-01-01T00:00:00 TO 2025-12-31T23:59:59]
+last_modified,Updated,2026-03-02T03:25:04.506317
+data_update_frequency,Expected Update Frequency,Every month
+groups,Location,Sri Lanka
+license_title,License,Creative Commons Attribution International (CC BY)
+methodology,Methodology,Registry
+methodology_other,Define Methodology,
+caveats,Caveats/Comments,
+tags,Tags,"agriculture-livestock, development, indicators"
+resource_1_created,Created,2019-11-19T18:42:31.640693
+resource_1_description,Description,"csv containing Agriculture and Rural Development indicators  Indicators: Access to electricity, Agricultural land, Agricultural raw materials exports, Agricultural raw materials imports, Agriculture, Annual freshwater withdrawals, Arable land, Average precipitation in depth, Cereal production, Cereal yield, Crop production index, Employment in agriculture, Fertilizer consumption, Food production index, Forest area, Land area, Land under cereal production, Livestock production index, Permanent cropland, Rural land area, Rural land area where elevation is below 5 meters, Rural population, Rural population growth, Rural population living in areas where elevation is below 5 meters, Surface area"
+resource_1_format,File Format,CSV
+resource_1_download_url,Download URL,https://data.humdata.org/dataset/5f03f0d6-bdb0-48bd-ab57-548cb97d7a9f/resource/a8ec11a2-feea-48c9-86f2-8d2866ce4b40/download/agriculture-and-rural-development_lka.csv
+resource_1_id,Resource ID,a8ec11a2-feea-48c9-86f2-8d2866ce4b40
+resource_1_last_modified,Updated,2026-03-02T03:25:04.506317
+resource_1_metadata_modified,Metadata Updated,2026-03-02T03:25:06.516624
+resource_1_microdata,Microdata,FALSE
+resource_1_dataset_id,Dataset ID,5f03f0d6-bdb0-48bd-ab57-548cb97d7a9f
+resource_1_resource_type,Resource Type,file.upload
+resource_1_name,Resource Name,Agriculture and Rural Development Indicators for Sri Lanka
+resource_1_mimetype,MIME Type,
+resource_1_size,Size,151.4K
