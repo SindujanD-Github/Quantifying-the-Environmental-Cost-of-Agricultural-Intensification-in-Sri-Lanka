@@ -1,8 +1,8 @@
-Quantifying the Environmental Cost of Agricultural Intensification in Sri Lanka
+### Quantifying the Environmental Cost of Agricultural Intensification in Sri Lanka
 
 A Predictive Analysis of Deforestation and Land-Use Efficiency
-This repository contains a comprehensive data science pipeline to analyze and model the relationship between agricultural expansion and forest cover loss in Sri Lanka. The project moves from raw data cleaning and hypothesis testing to high-performance ensemble modeling.
 
+This repository contains a comprehensive data science pipeline to analyze and model the relationship between agricultural expansion and forest cover loss in Sri Lanka. The project moves from raw data cleaning and hypothesis testing to high-performance ensemble modeling.
 
 ## Step 1: Problem Definition
 
@@ -23,18 +23,19 @@ Source: World Bank Agriculture and Rural Development Indicators for Sri Lanka vi
 URL: https://data.humdata.org/dataset/world-bank-agriculture-and-rural-development-indicators-for-sri-lanka
 
 The dataset includes longitudinal indicators (1961–2022) covering:
-    Forest area (sq. km)
-    Agricultural land (% and sq. km)
-    Fertilizer consumption
-    Cereal yield and Food Production Indices
-
+Forest area (sq. km)
+Agricultural land (% and sq. km)
+Fertilizer consumption
+Cereal yield and Food Production Indices
 
     Indicators: Access to electricity, Agricultural land, Agricultural raw materials exports, Agricultural raw materials imports, Agriculture, Annual freshwater withdrawals, Arable land, Average precipitation in depth, Cereal production, Cereal yield, Crop production index, Employment in agriculture, Fertilizer consumption, Food production index, Forest area, Land area, Land under cereal production, Livestock production index, Permanent cropland, Rural land area, Rural land area where elevation is below 5 meters, Rural population, Rural population growth, Rural population living in areas where elevation is below 5 meters, Surface area
 
 ## Step 3: Data Understanding
+
 Initial inspection revealed a high-dimensional time-series dataset. Key features were identified as heavily right-skewed with significant temporal dependencies. Indicator-specific coverage varies, requiring a pivoted structure to align all variables by year for multivariate analysis.
 
 ## Step 4: Data Cleaning and Preprocessing
+
 A multi-tiered cleaning strategy was implemented to maintain data integrity:
 
     1. Imputation Strategy: * Low Missing (<10%): Linear interpolation to maintain time-series trends.
@@ -44,10 +45,12 @@ A multi-tiered cleaning strategy was implemented to maintain data integrity:
     5. Normalization: StandardScaler was applied via ColumnTransformer to ensure scale-sensitive models (Linear Regression/Ridge)  performed optimally alongside tree-based models.
 
 ## Step 5: Exploratory Data Analysis
-EDA highlighted a near-perfect inverse correlation (r ~ -0.98$) between the Food Production Index and Forest Area. 
+
+EDA highlighted a near-perfect inverse correlation (r ~ -0.98$) between the Food Production Index and Forest Area.
 Time-series plots demonstrated that while cereal yields have stabilized, land expansion continues to encroach on forest boundaries, indicating a shift from "vertical" to "horizontal" growth.
 
 ## Step 6: Feature Selection
+
 Features were selected based on their relevance to the "Sustainability Gap" hypothesis:
 
     Target: Forest area (sq. km)
@@ -65,6 +68,7 @@ H1 (Fertilizer Intensity): A T-test confirmed a statistically significant increa
 H2 (Land Expansion): Spearman Rho ($r_s > 0.9$) confirmed a strong monotonic upward trend in agricultural land area over time, directly correlating with forest decline.
 
 ## Step 8: Model Development
+
 A diverse set of regressors were trained and compared:
 
     Baseline: Mean Predictor.
@@ -72,18 +76,21 @@ A diverse set of regressors were trained and compared:
     Ensemble Models: Random Forest and Gradient Boosting Regressor.
 
 ## Step 9: Model Evaluation
+
 Performance was benchmarked using four key metrics:
-    R2 Score: Measures variance explanation (Target: >0.90).
-    RMSE: Quantifies prediction error in sq. km.
-    MAE: Average absolute error.
-    MAPE: Percentage error to assess reliability across different decades.
+R2 Score: Measures variance explanation (Target: >0.90).
+RMSE: Quantifies prediction error in sq. km.
+MAE: Average absolute error.
+MAPE: Percentage error to assess reliability across different decades.
 
 ## Step 10: Interpretation of Results
+
 The Random Forest model emerged as the definitive winner.
-While Gradient Boosting performed well in specific splits, Random Forest demonstrated superior Cross-Validation stability (lower CV-RMSE). 
+While Gradient Boosting performed well in specific splits, Random Forest demonstrated superior Cross-Validation stability (lower CV-RMSE).
 This indicates that Random Forest is better at generalizing across different "eras" of Sri Lankan agricultural policy and is less sensitive to the high volatility of the 2021–2022 economic shocks.
 
 ## Step 11: Conclusion
+
 The analysis confirms that Sri Lanka's agricultural growth currently operates as a structural driver of deforestation. To mitigate this, the study advocates for Sustainable Intensification—shifting from horizontal expansion (clearing land) to vertical growth (optimizing yield on existing plots through technology). This transition is essential to decouple national food security from environmental degradation.
 
 🛠 Tech Stack
